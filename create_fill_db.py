@@ -30,7 +30,7 @@ def fill_tables(cr, table_name: str, columns: str, qty_of_records: int, fields_t
 
 
 if __name__ == '__main__':
-    conn = sqlite3.connect('test_db.db')
+    conn = sqlite3.connect('instance/test_db.db')
     cr = conn.cursor()
 
     create_tables(cr, 'create_tables.sql')
